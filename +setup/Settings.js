@@ -20,7 +20,15 @@ const Settings = {
   /**
    * @desc - set to true if using the PlugY mod - allows use of larger stash
    */
-  plugyMode: false,
+  plugyMode: true,
+  /**
+   * @desc - number of players to set when using PlugY mode
+   */
+  plugyPlayers: 1,
+  /**
+   * @desc - enable auto players 7 when previous difficulty has been beaten, allows for better gold/item find
+   */
+  plugyAutoplayers: true,
   /**
    * @desc - log game/bot statistics to .csv files located at SoloPlay/.soloplay/
    */

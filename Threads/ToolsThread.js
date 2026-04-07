@@ -844,7 +844,11 @@ function main () {
       quitFlag = true;
     }
 
-    if (me.maxgametime - (getTickCount() - me.gamestarttime) < 10e3) {
+    if (me.maxgametime - (getTickCount() - me.gamestarttime) < 10e3 && me.maxgametime > 0) {
+      // log the maxgame time, tick count and start game time
+      console.log("Maxgametime: " + me.maxgametime);
+      console.log("Current Tick Count: " + getTickCount());
+      console.log("Game Start Time: " + me.gamestarttime);
       console.log("Max game time reached");
       quitFlag = true;
     }

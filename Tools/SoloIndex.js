@@ -667,7 +667,7 @@ const SoloIndex = {
         return (
           (me.normal && cLvl >= 24)
           || (me.nightmare && cLvl >= 40)
-          || (me.hell && cLvl >= (me.sorceress ? 85 : 80))
+          || (me.hell && cLvl >= 80)
         );
       },
       skipIf: function () {

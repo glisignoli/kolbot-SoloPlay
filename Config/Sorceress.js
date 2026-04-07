@@ -28,7 +28,9 @@
 
   /* Pickit configuration. */
   Config.PickRange = 40;
-  // Config.PickitFiles.push("kolton.nip");
+  Config.PickitFiles.push("kolton.nip");
+  Config.PickitFiles.push("set.nip");
+  Config.PickitFiles.push("unique.nip");
   // Config.PickitFiles.push("test.nip");
 
   /* Gambling configuration. */
