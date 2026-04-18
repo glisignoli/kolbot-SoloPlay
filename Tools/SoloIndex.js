@@ -25,18 +25,32 @@ const SoloIndex = {
    */
   scripts: [
     // Act 1
-    "corpsefire", "mausoleum", "den", "bishibosh", "bloodraven", "tristram", "treehead",
-    "countess", "smith", "pits", "jail", "boneash", "andariel", "a1chests", "cows",
+    "countess", "pits", "andariel", "cows",
     // Act 2
-    "cube", "radament", "creepingfeature", "beetleburst", "amulet", "summoner",
-    "fireeye", "maggotlair", "tombs", "ancienttunnels", "staff", "duriel",
+    "summoner",
+    "tombs", "ancienttunnels",
     // Act 3
-    "lamessen", "templeruns", "lowerkurast", "eye", "heart", "brain", "travincal", "mephisto",
+    "templeruns", "lowerkurast", "travincal", "mephisto",
     // Act 4
-    "izual", "hellforge", "river", "hephasto", "diablo",
+    "river", "diablo",
     // Act 5
-    "shenk", "savebarby", "anya", "pindle", "nith", "ancients", "baal", "a5chests",
+    "shenk", "pindle", "baal"
   ],
+
+  // scripts: [
+  //   // Act 1
+  //   "corpsefire", "mausoleum", "den", "bishibosh", "bloodraven", "tristram", "treehead",
+  //   "countess", "smith", "pits", "jail", "boneash", "andariel", "a1chests", "cows",
+  //   // Act 2
+  //   "cube", "radament", "creepingfeature", "beetleburst", "amulet", "summoner",
+  //   "fireeye", "maggotlair", "tombs", "ancienttunnels", "staff", "duriel",
+  //   // Act 3
+  //   "lamessen", "templeruns", "lowerkurast", "eye", "heart", "brain", "travincal", "mephisto",
+  //   // Act 4
+  //   "izual", "hellforge", "river", "hephasto", "diablo",
+  //   // Act 5
+  //   "shenk", "savebarby", "anya", "pindle", "nith", "ancients", "baal", "a5chests",
+  // ],
 
   /**
    * @type {Record<SoloScript, { preReq?: () => boolean, skipIf?: () => boolean, shouldRun: () => boolean }>}
