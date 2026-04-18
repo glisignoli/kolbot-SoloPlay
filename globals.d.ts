@@ -392,6 +392,8 @@ declare global {
 
   namespace Developer {
     const plugyMode: boolean;
+    const plugyPlayers: number;
+    const plugyAutoplayers: boolean;
     const logPerformance: boolean;
     const overlay: boolean;
     const displayClockInConsole: boolean;

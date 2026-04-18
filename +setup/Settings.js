@@ -24,7 +24,7 @@ const Settings = {
   /**
    * @desc - number of players to set when using PlugY mode
    */
-  plugyPlayers: 1,
+  plugyPlayers: 7,
   /**
    * @desc - enable auto players 7 when previous difficulty has been beaten, allows for better gold/item find
    */

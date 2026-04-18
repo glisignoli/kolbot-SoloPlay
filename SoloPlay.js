@@ -276,15 +276,18 @@ function main () {
   myPrint("start setup");
 
   // If in plugy mode, set players
-  if (Settings.PlugY) {
+  if (Settings.plugyMode) {
+    myPrint("Setting players " + Settings.plugyPlayers)
     const currentDiff = sdk.difficulty.Difficulties.indexOf(sdk.difficulty.nameOf(me.diff));
     const highestDiff = sdk.difficulty.Difficulties.indexOf(me.data.highestDifficulty);
 
-    if (Settings.PlugYAutoplayers && currentDiff < highestDiff) {
-      console.log("Setting players 8 for better item find since we've beaten this difficulty before");
+    console.log("Current diff:" + currentDiff + ", Highest diff: " + highestDiff);
+
+    if (Settings.plugyAutoplayers && currentDiff < highestDiff && currentDiff != highestDiff) {
+      console.log("Setting players 7 for better item find since we've beaten this difficulty before");
       say("/players 7");
     } else {
-      say("/players " + Settings.PlugYPlayers);
+      say("/players " + Settings.plugyPlayers, true);
     }
   }
   const { nipItems, impossibleClassicBuilds, impossibleNonLadderBuilds } = require("./Modules/General");
